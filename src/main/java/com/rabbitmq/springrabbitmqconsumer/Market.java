@@ -27,4 +27,16 @@ public class Market {
     @JsonProperty("MAX_PRICE_SHIFT")
         private String MAX_PRICE_SHIFT;
 
+    @Override
+    public String toString() {
+        return "{" +
+                "LAST_TRADED_PRICE='" + LAST_TRADED_PRICE + '\'' +
+                ", SELL_LIMIT='" + SELL_LIMIT + '\'' +
+                ", BID_PRICE='" + BID_PRICE + '\'' +
+                ", ASK_PRICE='" + ASK_PRICE + '\'' +
+                ", BUY_LIMIT='" + BUY_LIMIT + '\'' +
+                ", TICKER='" + TICKER + '\'' +
+                ", MAX_PRICE_SHIFT='" + MAX_PRICE_SHIFT + '\'' +
+                '}';
+    }
 }
